@@ -31,11 +31,7 @@ function showBigCard(i) { // showing the big card by opening
     return `
         <div id="bigCard${i}" class="big-card ${type}">
             <div class="big-card-header">
-                <h1 id="pokemonBigName${i}"></h1>
-                <div class="big-card-header-back-next">
-                    <img onclick="previousCard(${i})" src="img/back.png" >
-                    <img onclick="nextCard(${i})" src="img/next.png" >
-                </div>
+                <h2 id="pokemonBigName${i}"></h2>
                 <div class="closeButton">
                     <img onclick="closeBigCard(${i})" src="img/close-button.png" >
                     </div>

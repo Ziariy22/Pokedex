@@ -1,4 +1,8 @@
-@media (max-width: 800px) {
+/*for mobile devices*/
+
+@media (max-width: 1000px),
+       (max-height: 800px) {
+        
      .header h1 {
         font-size: 35px;
     }
@@ -10,11 +14,63 @@
     }
 
     .big-card  {
-        height: 400px;
-        width: 400px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
     }
 
-    .big-card h1 {
+    .big-card-header h2 {
         font-size: 25px;
     }
+
+    .big-card-info-content p {
+        height: 30px;
+        width: 110px;
+        font-size: 15px;
+    }
+
+    .big-card img {
+        position: relative;
+        left: 0;
+        top: -10px;
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: contain;
+    }
+
+    .closeButton img {
+        margin-top: 10px;
+    }
+
+    .info-container-name {
+    font-size: 13px;
+    }
+
+    .stats-border {
+    border: 1px solid #000;
+    width: 200px;
+    height: 13px;
+    border-radius: 10px;
+    }
+
+    .stats-bar {
+    height: 13px;
+    font-size: 13px;
+    border-radius: 10px;
+    }
+
+    .stats-bar p {
+        margin-left: -30px;
+    }
+
+    .info-container {
+        margin-top: 30px;
+    }
 }
+
+@media (max-width: 300px) {
+  
+
+}
+
+

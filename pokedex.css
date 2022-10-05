@@ -6,6 +6,11 @@ html {
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+.noScroll {
+    overflow: hidden !important;
 }
 
 .d-none {
@@ -112,14 +117,13 @@ body {
 }
 
 .big-card {
-    min-height: 85vh;
     color: #fff;
     z-index: -1;
     width: 66vh;
     border-radius: 20px;
 }
 
-.big-card h1 {
+.big-card h2 {
     margin: 0;
 }
 
@@ -136,16 +140,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.big-card-header-back-next img {
-    cursor: pointer;
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 24px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .closeButton img {

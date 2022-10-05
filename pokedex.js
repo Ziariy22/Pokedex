@@ -139,6 +139,7 @@ function loadPokeStats(i) { // Information from the API
 
 function openBigCard(i) {
     document.getElementById('showBigCard').classList.remove('d-none');
+    document.getElementById('body').classList.add('noScroll');
     document.getElementById('showBigCard').innerHTML += showBigCard(i);
     document.getElementById('showBigCard').style = 'z-index: 2';
     loadBigPokemonCards(i);
@@ -148,35 +149,10 @@ function openBigCard(i) {
 function closeBigCard(i) {
     document.getElementById('showBigCard').classList.add('d-none');
     document.getElementById(`bigCard${i}`).classList.add('d-none');
+    document.getElementById('body').classList.remove('noScroll');
     document.getElementsByClassName('big-card').style = 'z-index: -1';
     document.getElementById('showBigCard').style = 'z-index: -1';
     document.getElementById('showBigCard').innerHTML = '';
-}
-
-
-function previousCard(i) {
-    if (i == 1) {
-        loadBigPokemonCards(1);
-    } else {
-        let previousPokemon = i - 1;
-        document.getElementById(`bigCard${previousPokemon}`);
-        loadBigPokemonCards(previousPokemon);
-        closeBigCard(i);
-        openBigCard(previousPokemon);
-    }
-}
-
-
-function nextCard(i) {
-    if (i == 898) {
-        loadBigPokemonCards(898);
-    } else {
-        let nextPokemon = i + 1;
-        document.getElementById(`bigCard${nextPokemon}`);
-        loadBigPokemonCards(nextPokemon);
-        closeBigCard(i);
-        openBigCard(nextPokemon);
-    }
 }
 
 
