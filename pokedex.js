@@ -1,6 +1,6 @@
 let allPokemon = [];
 let currentPokemon;
-let pokemonLimit = 16;
+let pokemonLimit = 16; // 16 Pokémon before scrolling and overall there are 898 Pokémon from all Pokémon-parts
 let isLoading = false;
 
 async function loadPokemon() { // shows the content from API
@@ -34,7 +34,7 @@ const ScrollAllPokemon = async () => { // For showing another 16 Pokémon by scr
             allPokemon.push(currentPokemon);
             renderPokemonInfo(i);
         }
-        pokemonLimit += 16; // adds 16 Pokémon
+        pokemonLimit += 16; // add another 16 Pokémon
         isLoading = false;
     }
 }
@@ -140,6 +140,9 @@ function loadPokeStats(i) { // Information from the API
 function openBigCard(i) {
     document.getElementById('showBigCard').classList.remove('d-none');
     document.getElementById('body').classList.add('noScroll');
+    document.getElementById('body').classList.add('overlay');
+    document.getElementById('search').classList.add('d-none');
+    document.getElementById('heading').classList.add('d-none');
     document.getElementById('showBigCard').innerHTML += showBigCard(i);
     document.getElementById('showBigCard').style = 'z-index: 2';
     loadBigPokemonCards(i);
@@ -150,6 +153,9 @@ function closeBigCard(i) {
     document.getElementById('showBigCard').classList.add('d-none');
     document.getElementById(`bigCard${i}`).classList.add('d-none');
     document.getElementById('body').classList.remove('noScroll');
+    document.getElementById('body').classList.remove('overlay');
+    document.getElementById('search').classList.remove('d-none');
+    document.getElementById('heading').classList.remove('d-none');
     document.getElementsByClassName('big-card').style = 'z-index: -1';
     document.getElementById('showBigCard').style = 'z-index: -1';
     document.getElementById('showBigCard').innerHTML = '';
