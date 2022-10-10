@@ -2,9 +2,21 @@
 
 @media (max-width: 1700px),
        (max-height: 800px) {
+
+    html {
+        background: url(img/pokemon-bg.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
         
      .header h1 {
         font-size: 35px;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .search-bar {
+        position: fixed;
+        z-index: 1;
     }
 
     .search-bar input {
