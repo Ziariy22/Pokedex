@@ -1,0 +1,77 @@
+/*for mobile devices*/
+
+@media (max-width: 1700px),
+(max-height: 800px) {
+
+    .header h1 a {
+        text-decoration: none;
+        text-shadow: 0px 0px 10px #fff;
+        color: dimgray;
+        font-size: 25px;
+    }
+
+    .search-bar {
+        position: fixed;
+        z-index: 1;
+    }
+
+    .search-bar input {
+        width: 150px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .big-card {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+
+    .big-card-header h2 {
+        font-size: 25px;
+    }
+
+    .big-card-info-content p {
+        height: 30px;
+        width: 110px;
+        font-size: 15px;
+    }
+
+    .big-card img {
+        position: relative;
+        left: 0;
+        top: -10px;
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: contain;
+    }
+
+    .closeButton img {
+        margin-top: 10px;
+    }
+
+    .info-container-name {
+        font-size: 13px;
+    }
+
+    .stats-border {
+        border: 1px solid #000;
+        width: 200px;
+        height: 13px;
+        border-radius: 10px;
+    }
+
+    .stats-bar {
+        height: 13px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+
+    .stats-bar p {
+        margin-left: -30px;
+    }
+
+    .info-container {
+        margin-top: 30px;
+    }
+}

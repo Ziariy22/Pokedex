@@ -1,0 +1,250 @@
+/* html {
+    background: url(img/team-g6af14a079_1280.png) no-repeat center center fixed;
+    background-size: cover;
+} */
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    background-color: rgb(114, 111, 105);
+    scrollbar-width: auto;
+    scrollbar-color: #4b47ff #141d2f;
+}
+
+/* Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #141d2f;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #bd2828;
+    border-radius: 10px;
+    border: 0px solid #ffffff;
+}
+
+.noScroll {
+    overflow: hidden !important;
+}
+
+.overlay {
+    background: #000;
+}
+
+.d-none {
+    display: none;
+}
+
+.header {
+    height: 45px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: blanchedalmond 0px 20px 30px -10px;
+    background-color: blanchedalmond;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header h1 a {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #fff;
+    color: dimgray;
+    font-size: 35px;
+}
+
+.search-bar {
+    position: fixed;
+    right: 10px;
+    z-index: 1;
+}
+
+.search-bar input {
+    width: 250px;
+    height: 28px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+}
+
+.search-bar input:hover {
+    opacity: 0.9;
+
+}
+
+.search-bar input::placeholder {
+    position: relative;
+    left: 7px;
+}
+
+.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    padding-top: 100px;
+}
+
+.card {
+    color: #fff;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+.card:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.card-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-name h2 {
+    margin: 0;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.card-types {
+    display: flex;
+    justify-content: center;
+}
+
+.card-types p {
+    margin: 15px;
+    border: 2px solid;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#showBigCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.big-card {
+    color: #fff;
+    z-index: -1;
+    width: 66vh;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+.big-card h2 {
+    margin: 0;
+}
+
+.big-card img {
+    height: 300px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 100px;
+    bottom: 60px;
+}
+
+.big-card-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeButton img {
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 24px;
+}
+
+.big-card-info {
+    display: flex;
+}
+
+.big-card-info-content p {
+    margin: 15px;
+    border: 2px solid;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container {
+    height: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-left: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info-container-name {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-container-name p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.stats-border {
+    border: 1px solid #000;
+    width: 400px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.stats-bar {
+    background-color: greenyellow;
+    height: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.stats-bar p {
+    margin-left: -30px;
+}
